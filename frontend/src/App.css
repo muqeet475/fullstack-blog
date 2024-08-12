@@ -1,0 +1,109 @@
+/* General styling for the App component */
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif; /* Use a clean, readable font */
+}
+
+/* Styling for the logo */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  margin: 20px; /* Add some spacing around the logo */
+}
+
+/* Animation for the logo */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* Styling for the header */
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 20px; /* Add padding to the header */
+}
+
+/* Link styling */
+.App-link {
+  color: #61dafb;
+  text-decoration: none; /* Remove underline from links */
+  font-weight: bold; /* Make the link text bold */
+}
+
+/* Styling for buttons */
+.Button {
+  background-color: #61dafb;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px; /* Rounded corners */
+}
+
+.Button:hover {
+  background-color: #4fa3b0; /* Darker shade on hover */
+}
+
+/* Form styling */
+.FormContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.FormField {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.FormField input,
+.FormField textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.FormField input:focus,
+.FormField textarea:focus {
+  border-color: #61dafb;
+  outline: none;
+}
+
+/* Validation message styling */
+.ValidationMessage {
+  color: red;
+  font-size: 12px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+/* Container styling for various components */
+.Container {
+  padding: 20px;
+}
+
+/* Styling for card images */
+.card-img {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+}
