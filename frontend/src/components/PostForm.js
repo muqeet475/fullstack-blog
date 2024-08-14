@@ -16,7 +16,7 @@ const PostForm = () => {
 
     try {
       await axios.post(
-        'http://localhost:5000/api/posts',
+        'https://fullsstakkblog.netlify.app/api/posts', // Updated to use Netlify URL
         formData,
         {
           headers: {

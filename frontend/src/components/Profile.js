@@ -12,7 +12,7 @@ const Profile = () => {
 
     if (token) {
       try {
-        const response = await axios.get('http://localhost:5000/api/auth/profile', {
+        const response = await axios.get('https://fullsstakkblog.netlify.app/api/auth/profile', {
           headers: { Authorization: `Bearer ${token}` },
         });
         setUser(response.data); // Set the user data

@@ -38,7 +38,7 @@ const CreatePost = () => {
 
     try {
       setIsSubmitting(true);
-      const response = await axios.post('http://localhost:5000/api/posts', formData, {
+      const response = await axios.post('https://fullsstakkblog.netlify.app/api/posts', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },

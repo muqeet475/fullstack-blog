@@ -10,7 +10,7 @@ const PostDetail = () => {
   useEffect(() => {
     const fetchPost = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/posts/${id}`);
+        const response = await axios.get(`https://fullsstakkblog.netlify.app/api/posts/${id}`); // Updated to use Netlify URL
         setPost(response.data);
       } catch (error) {
         console.error('Failed to fetch post:', error);
@@ -33,7 +33,7 @@ const PostDetail = () => {
         <Box sx={{ mb: 2 }}>
           <CardMedia
             component="img"
-            image={`http://localhost:5000${post.image}`} // Correct path to image
+            image={`https://fullsstakkblog.netlify.app${post.image}`} // Updated to use Netlify URL
             alt={post.title}
             sx={{ maxHeight: '500px', objectFit: 'cover' }}
           />

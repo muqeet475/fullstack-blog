@@ -10,7 +10,7 @@ const Login = () => {
 
   const onSubmit = async (data) => {
     try {
-      const response = await axios.post('http://localhost:5000/api/auth/login', data);
+      const response = await axios.post('https://fullsstakkblog.netlify.app/api/auth/login', data);
       localStorage.setItem('token', response.data.token);
       navigate('/create-post'); // Redirect to the Create Post page
     } catch (error) {

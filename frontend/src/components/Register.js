@@ -16,7 +16,7 @@ const Register = () => {
     setError(''); // Clear previous errors
 
     try {
-      const response = await axios.post('http://localhost:5000/api/auth/register', {
+      const response = await axios.post('https://fullsstakkblog.netlify.app/api/auth/register', {
         username,
         email,
         password,

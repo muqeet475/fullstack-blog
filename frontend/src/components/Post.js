@@ -8,7 +8,7 @@ const Post = ({ post, onClick }) => {
         <CardMedia
           component="img"
           height="140"
-          image={`http://localhost:5000${post.image}`} // Ensure the path is correct
+          image={`https://fullsstakkblog.netlify.app${post.image}`} // Updated to use Netlify URL
           alt={post.title}
         />
       )}
